@@ -3,6 +3,7 @@ import { calculateInvestmentResults , formatter} from '../util/investment'
 
 function Results({input}) {
     const resultData = calculateInvestmentResults(input);
+
     const initialInvestment = resultData[0].valueEndOfYear - resultData[0].annualInvestment;
     return (
   <table id="result">
@@ -36,3 +37,4 @@ function Results({input}) {
 }
 
 export default Results
+
